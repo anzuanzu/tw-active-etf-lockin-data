@@ -3,33 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>隱私權政策｜主動鎖碼</title>
+<title>主動鎖碼 隱私權政策</title>
 <style>
-  :root { color-scheme: light dark; --fg:#1d1d1f; --muted:#6e6e73; --bg:#fff; --accent:#3b5bdb; }
-  @media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --muted:#a1a1a6; --bg:#000; --accent:#748ffc; } }
-  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, "PingFang TC", sans-serif; }
-  main { max-width:640px; margin:0 auto; padding:48px 16px; }
-  h2 { margin-top:32px; font-size:1.1em; } .muted { color:var(--muted); } a { color:var(--accent); }
+  :root { --bg: #FFFFFF; --fg: #1C1C1E; --muted: #6B6B70; --line: #E5E5EA; --accent: #2F5BD8; --card: #F5F6F8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111214; --fg: #EDEDF0; --muted: #9A9AA2; --line: #2A2B30; --accent: #7FA2FF; --card: #1A1B1F; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.3; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { margin: 6px 0; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .summary { background: var(--card); border-radius: 14px; padding: 14px 18px; margin: 24px 0 0; }
+  .summary p { margin: 4px 0; }
 </style>
 </head>
 <body>
 <main>
-  <h1>隱私權政策</h1>
-  <p class="muted">最後更新：2026 年 10 月 21 日</p>
+  <h1>主動鎖碼 隱私權政策</h1>
+  <p class="meta">生效日期：2026 年 10 月 22 日</p>
 
-  <h2>我們蒐集的資料</h2>
-  <p>「主動鎖碼」App 不需註冊帳號，不蒐集、儲存或分享任何可識別個人身分的資料，也不使用廣告或第三方追蹤服務。</p>
+  <div class="summary">
+    <p><strong>重點：</strong>本 App 不需要註冊帳號，不蒐集、不上傳任何個人資料，也沒有廣告或追蹤。你輸入的自選股、持股等內容只存在你自己的 iPhone 上。</p>
+  </div>
 
-  <h2>App 的網路連線</h2>
-  <p>App 僅會從本網站下載公開的每日統計資料（<code>v1/latest.json</code>）。與任何網站連線時一樣，網站主機（GitHub Pages）可能依其政策記錄連線的 IP 位址等技術資訊，我們不會取得或使用這些資訊。</p>
+  <h2>一、我們不蒐集的資料</h2>
+  <p>「主動鎖碼」（以下稱本 App）不會蒐集你的姓名、電子郵件、電話、位置、聯絡人、相片、裝置識別碼或使用行為。本 App 沒有內建任何廣告、數據分析或追蹤工具，也不會把資料提供或出售給第三方。</p>
 
-  <h2>儲存在裝置上的資料</h2>
-  <p>App 會在您的裝置上快取最近一次下載的資料，以及您是否已閱讀免責聲明的設定。這些資料只存在您的裝置中，刪除 App 即會一併移除。</p>
+  <h2>二、只存在你手機上的資料</h2>
+  <p>為了讓功能正常運作，下列內容會儲存在你的裝置上，不會傳送給我們：</p>
+  <ul>
+    <li>自選股清單（主畫面小工具也會讀取這份清單）</li>
+    <li>「我的持股」中你輸入的股票代號與張數</li>
+    <li>介面風格、通知條件等 App 設定</li>
+  </ul>
+  <p>這些資料會隨 iPhone 的備份（例如 iCloud 備份）一起保存，備份由 Apple 依其隱私權政策處理。刪除本 App 時，這些資料會一併從裝置上移除。</p>
 
-  <h2>政策變更</h2>
-  <p>若本政策有所變更，將更新於本頁面並修改上方日期。</p>
+  <h2>三、網路連線</h2>
+  <p>本 App 會從 GitHub Pages（anzuanzu.github.io）下載公開的市場資料檔，內容是依投信公開揭露的主動式 ETF 持股整理而成的統計。下載時不會附帶任何你的個人資料或自選內容。</p>
+  <p>與一般網站相同，GitHub 作為主機服務商，可能依其<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">隱私權聲明</a>記錄連線的 IP 位址等技術資訊；我們不會取得或使用這些紀錄來辨識使用者。</p>
 
-  <p><a href="./">← 回首頁</a></p>
+  <h2>四、通知與背景更新</h2>
+  <p>每日摘要與自選股通知都是在你的裝置上計算後產生的本機通知，不經過我們的伺服器。若你開啟通知，App 可能在背景下載最新的公開資料，以判斷是否需要通知你。你可以隨時在 iPhone「設定」中關閉通知或背景重新整理。</p>
+
+  <h2>五、訂閱與付款</h2>
+  <p>Pro 訂閱的購買、付款、續訂與取消全部由 Apple 的 App Store 處理。我們不會取得你的姓名、付款方式或 Apple 帳號資訊；App 只會從 Apple 取得「目前是否有有效訂閱」的結果，用來開啟 Pro 功能。</p>
+  <p>你可以在 iPhone「設定」&gt;「你的名字」&gt;「訂閱項目」中管理或取消訂閱。</p>
+
+  <h2>六、兒童隱私</h2>
+  <p>本 App 不以兒童為對象，也不會蒐集任何人的個人資料，包括兒童。</p>
+
+  <h2>七、投資資訊聲明</h2>
+  <p>本 App 的內容僅為公開資料的統計彙整，不構成任何投資建議。投資前請自行判斷並承擔風險。</p>
+
+  <h2>八、政策更新</h2>
+  <p>如果本政策有變更，我們會更新本頁面並修改上方的生效日期。若變更涉及資料處理方式，也會在 App 更新說明中告知。</p>
+
+  <h2>九、聯絡我們</h2>
+  <p>對本政策有任何疑問，請來信：<a href="mailto:jamesyang14@gmail.com">jamesyang14@gmail.com</a></p>
 </main>
 </body>
 </html>
