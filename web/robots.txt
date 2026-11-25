@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://etf.modebrief.com/sitemap.xml
